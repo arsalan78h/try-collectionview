@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8453E2EA225B251200E6B483 /* SliderJSONStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453E2E9225B251200E6B483 /* SliderJSONStruct.swift */; };
+		8453E2EA225B251200E6B483 /* JSONStructSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453E2E9225B251200E6B483 /* JSONStructSlider.swift */; };
 		845E9A91223CDFD900EE8BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E9A90223CDFD900EE8BB6 /* AppDelegate.swift */; };
 		845E9A96223CDFD900EE8BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845E9A94223CDFD900EE8BB6 /* Main.storyboard */; };
-		845E9A98223CDFDA00EE8BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845E9A97223CDFDA00EE8BB6 /* Assets.xcassets */; };
 		845E9A9B223CDFDA00EE8BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845E9A99223CDFDA00EE8BB6 /* LaunchScreen.storyboard */; };
+		84875E9F225F361100BDA445 /* JSONstructCategoriesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84875E9E225F361100BDA445 /* JSONstructCategoriesTableView.swift */; };
+		84875EA1225F369400BDA445 /* TableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84875EA0225F369400BDA445 /* TableCellController.swift */; };
 		848A8B25223D254B00BD217E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A8B24223D254B00BD217E /* ViewController.swift */; };
 		848A8B27223D255800BD217E /* BJAutoScrollingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A8B26223D255800BD217E /* BJAutoScrollingCollectionView.swift */; };
 		848A8B29223D256000BD217E /* CustomImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A8B28223D256000BD217E /* CustomImageCollectionViewCell.swift */; };
@@ -21,13 +22,14 @@
 /* Begin PBXFileReference section */
 		5CCEFE14A80C6F3C789C00F5 /* Pods-try collectionview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-try collectionview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-try collectionview/Pods-try collectionview.debug.xcconfig"; sourceTree = "<group>"; };
 		60B3D9C4BED1A868A33FE983 /* Pods_try_collectionview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_try_collectionview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8453E2E9225B251200E6B483 /* SliderJSONStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderJSONStruct.swift; sourceTree = "<group>"; };
+		8453E2E9225B251200E6B483 /* JSONStructSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStructSlider.swift; sourceTree = "<group>"; };
 		845E9A8D223CDFD900EE8BB6 /* try collectionview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "try collectionview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		845E9A90223CDFD900EE8BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845E9A95223CDFD900EE8BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		845E9A97223CDFDA00EE8BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845E9A9A223CDFDA00EE8BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845E9A9C223CDFDA00EE8BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84875E9E225F361100BDA445 /* JSONstructCategoriesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONstructCategoriesTableView.swift; sourceTree = "<group>"; };
+		84875EA0225F369400BDA445 /* TableCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellController.swift; sourceTree = "<group>"; };
 		848A8B24223D254B00BD217E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		848A8B26223D255800BD217E /* BJAutoScrollingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJAutoScrollingCollectionView.swift; sourceTree = "<group>"; };
 		848A8B28223D256000BD217E /* CustomImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -76,16 +78,41 @@
 			isa = PBXGroup;
 			children = (
 				845E9A90223CDFD900EE8BB6 /* AppDelegate.swift */,
-				8453E2E9225B251200E6B483 /* SliderJSONStruct.swift */,
-				848A8B24223D254B00BD217E /* ViewController.swift */,
+				845E9A9C223CDFDA00EE8BB6 /* Info.plist */,
+				84875E9B225F2CB700BDA445 /* Page1 */,
+				8453E2E9225B251200E6B483 /* JSONStructSlider.swift */,
 				848A8B26223D255800BD217E /* BJAutoScrollingCollectionView.swift */,
 				848A8B28223D256000BD217E /* CustomImageCollectionViewCell.swift */,
-				845E9A94223CDFD900EE8BB6 /* Main.storyboard */,
-				845E9A97223CDFDA00EE8BB6 /* Assets.xcassets */,
 				845E9A99223CDFDA00EE8BB6 /* LaunchScreen.storyboard */,
-				845E9A9C223CDFDA00EE8BB6 /* Info.plist */,
 			);
 			path = "try collectionview";
+			sourceTree = "<group>";
+		};
+		84875E9B225F2CB700BDA445 /* Page1 */ = {
+			isa = PBXGroup;
+			children = (
+				848A8B24223D254B00BD217E /* ViewController.swift */,
+				845E9A94223CDFD900EE8BB6 /* Main.storyboard */,
+				84875E9D225F35EC00BDA445 /* CategoriesTableView */,
+				84875E9C225F2D0F00BDA445 /* Slider ColeectionView */,
+			);
+			name = Page1;
+			sourceTree = "<group>";
+		};
+		84875E9C225F2D0F00BDA445 /* Slider ColeectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Slider ColeectionView";
+			sourceTree = "<group>";
+		};
+		84875E9D225F35EC00BDA445 /* CategoriesTableView */ = {
+			isa = PBXGroup;
+			children = (
+				84875E9E225F361100BDA445 /* JSONstructCategoriesTableView.swift */,
+				84875EA0225F369400BDA445 /* TableCellController.swift */,
+			);
+			name = CategoriesTableView;
 			sourceTree = "<group>";
 		};
 		881492B1DB753FC9DB9F9408 /* Pods */ = {
@@ -158,7 +185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				845E9A9B223CDFDA00EE8BB6 /* LaunchScreen.storyboard in Resources */,
-				845E9A98223CDFDA00EE8BB6 /* Assets.xcassets in Resources */,
 				845E9A96223CDFD900EE8BB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,11 +221,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8453E2EA225B251200E6B483 /* SliderJSONStruct.swift in Sources */,
+				8453E2EA225B251200E6B483 /* JSONStructSlider.swift in Sources */,
 				848A8B27223D255800BD217E /* BJAutoScrollingCollectionView.swift in Sources */,
 				848A8B25223D254B00BD217E /* ViewController.swift in Sources */,
 				845E9A91223CDFD900EE8BB6 /* AppDelegate.swift in Sources */,
+				84875E9F225F361100BDA445 /* JSONstructCategoriesTableView.swift in Sources */,
 				848A8B29223D256000BD217E /* CustomImageCollectionViewCell.swift in Sources */,
+				84875EA1225F369400BDA445 /* TableCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +373,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5CCEFE14A80C6F3C789C00F5 /* Pods-try collectionview.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQ267886M9;
 				INFOPLIST_FILE = "try collectionview/Info.plist";
@@ -364,7 +391,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC6BA5EC7F75C5A15573B42B /* Pods-try collectionview.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQ267886M9;
 				INFOPLIST_FILE = "try collectionview/Info.plist";
