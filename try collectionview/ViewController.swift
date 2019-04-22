@@ -100,7 +100,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
 extension ViewController: UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return categoriesItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -124,7 +124,6 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
     
         loadImage(indexPath: indexPath, cell: cell , toIndexPath : toIndexPath)
     }
-    
     
     func getDataForCategories(){
         let url = URL(string: "http://www.karishe.ir/wp-json/wp/v2/all-terms?term=project_category")

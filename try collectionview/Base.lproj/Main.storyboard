@@ -60,9 +60,23 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="xxX-RO-AKK"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="دسته بندی های ویژه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQV-J7-VOr">
+                                <rect key="frame" x="0.0" y="338.66666666666669" width="375" height="20.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.329999999999998" id="BaQ-5S-F3N"/>
+                                    <constraint firstAttribute="width" constant="375" id="hrH-cW-SO7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0f0-dy-8KM">
-                                <rect key="frame" x="0.0" y="291" width="375" height="372"/>
+                                <rect key="frame" x="0.0" y="367" width="375" height="270"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="JCe-Cf-eQ4"/>
+                                    <constraint firstAttribute="height" constant="270" id="avd-U1-vT0"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="68" id="Pgw-kP-dpe" customClass="TableViewCell" customModule="try_collectionview" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="68"/>
@@ -113,13 +127,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="VQV-J7-VOr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="94L-oC-U7y"/>
                             <constraint firstItem="BbQ-vZ-ia7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B8l-2j-kzE"/>
-                            <constraint firstItem="0f0-dy-8KM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WPK-7M-Thj"/>
-                            <constraint firstItem="0f0-dy-8KM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fZQ-gw-Z0E"/>
+                            <constraint firstItem="0f0-dy-8KM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LZe-jm-v6S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0f0-dy-8KM" secondAttribute="bottom" constant="141" id="eTh-3v-mFe"/>
+                            <constraint firstItem="VQV-J7-VOr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="itB-Yz-5na"/>
+                            <constraint firstItem="VQV-J7-VOr" firstAttribute="top" secondItem="BbQ-vZ-ia7" secondAttribute="bottom" constant="11.67" id="koa-xy-Udv"/>
                             <constraint firstItem="BbQ-vZ-ia7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lCv-LI-8bI"/>
-                            <constraint firstItem="0f0-dy-8KM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="291" id="lDL-pL-BE4"/>
                             <constraint firstItem="BbQ-vZ-ia7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nP2-DQ-puZ"/>
-                            <constraint firstAttribute="bottom" secondItem="0f0-dy-8KM" secondAttribute="bottom" constant="149" id="rrJ-UY-udk"/>
+                            <constraint firstItem="0f0-dy-8KM" firstAttribute="top" secondItem="VQV-J7-VOr" secondAttribute="bottom" constant="8" id="ndi-1s-EOU"/>
+                            <constraint firstItem="0f0-dy-8KM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qsn-iV-U6M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -132,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664.79999999999995" y="54.422788605697157"/>
+            <point key="canvasLocation" x="664.79999999999995" y="53.940886699507388"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D5e-EF-bgO">
