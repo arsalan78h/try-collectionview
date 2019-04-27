@@ -79,11 +79,8 @@
 			children = (
 				845E9A90223CDFD900EE8BB6 /* AppDelegate.swift */,
 				845E9A9C223CDFDA00EE8BB6 /* Info.plist */,
-				84875E9B225F2CB700BDA445 /* Page1 */,
-				8453E2E9225B251200E6B483 /* JSONStructSlider.swift */,
-				848A8B26223D255800BD217E /* BJAutoScrollingCollectionView.swift */,
-				848A8B28223D256000BD217E /* CustomImageCollectionViewCell.swift */,
 				845E9A99223CDFDA00EE8BB6 /* LaunchScreen.storyboard */,
+				84875E9B225F2CB700BDA445 /* Page1 */,
 			);
 			path = "try collectionview";
 			sourceTree = "<group>";
@@ -102,6 +99,9 @@
 		84875E9C225F2D0F00BDA445 /* Slider ColeectionView */ = {
 			isa = PBXGroup;
 			children = (
+				8453E2E9225B251200E6B483 /* JSONStructSlider.swift */,
+				848A8B26223D255800BD217E /* BJAutoScrollingCollectionView.swift */,
+				848A8B28223D256000BD217E /* CustomImageCollectionViewCell.swift */,
 			);
 			name = "Slider ColeectionView";
 			sourceTree = "<group>";

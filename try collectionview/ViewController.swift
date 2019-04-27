@@ -122,8 +122,15 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
         
         loadFieldName(indexPath: indexPath, cell: cell, toIndexPath: toIndexPath)
     
-        loadImage(indexPath: indexPath, cell: cell , toIndexPath : toIndexPath)
+       // loadImage(indexPath: indexPath, cell: cell , toIndexPath : toIndexPath)
+        if indexPath != 7 {
+        if let url = NSURL(string: categoriesItems[indexPath].image!) {
+            if let data = NSData(contentsOf: url as URL) {
+                cell.imageTittleField.image = UIImage(data: data as Data)
+            }
+        }
     }
+}
     
     func getDataForCategories(){
         let url = URL(string: "http://www.karishe.ir/wp-json/wp/v2/all-terms?term=project_category")
@@ -138,7 +145,6 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
                 }
                 }
             }catch{
-                print("----------------")
                 print("Error in get json data \(error)")
             }
             }.resume()
@@ -161,7 +167,6 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
                     //if there is any error
                     if let e = error {
                         //displaying the message
-                        print("----------------")
                         print("Error Occurred: \(e)")
                     } else {
                         //in case of now error, checking wheather the response is nil or not
@@ -175,11 +180,9 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
                                 cell.imageTittleField.image = image
                                 }
                             } else {
-                                print("----------------")
                                 print("Image file is currupted")
                             }
                         } else {
-                            print("----------------")
                             print("No response from server")
                         }
                     }
