@@ -9,12 +9,12 @@
 import Foundation
 
 struct ImgaeSlider: Codable {
-    let data: [Datum]
+    let data: [SliderDatum]
     let result: Bool
     let error: String
 }
 
-struct Datum: Codable {
+struct SliderDatum: Codable {
     let id, slideText: String
     let slideImage: String
     
