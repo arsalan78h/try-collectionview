@@ -35,10 +35,16 @@ class ViewController: UIViewController {
         getDataForCategories()
         getdataForSProjects()
         
-        
+        tableViewCategories.isScrollEnabled = false
+       
         
         self.initCollectionView()
         collectionView.startScrolling()
+    }
+    //auto layout height of the  categories tableView for number of rows
+    override func viewDidLayoutSubviews(){
+        tableViewCategories.frame = CGRect(x: tableViewCategories.frame.origin.x, y: tableViewCategories.frame.origin.y, width: tableViewCategories.frame.size.width, height: tableViewCategories.contentSize.height)
+        tableViewCategories.reloadData()
     }
     
     //MARK: -initial CollectionView timer
