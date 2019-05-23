@@ -66,8 +66,12 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="xxX-RO-AKK"/>
                                                 </connections>
                                             </collectionView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="دسته بندی های ویژه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQV-J7-VOr">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="دسته بندی های ویژه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQV-J7-VOr">
                                                 <rect key="frame" x="0.0" y="237" width="375" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="375" id="37A-s1-7AI"/>
+                                                    <constraint firstAttribute="height" constant="20" id="mrE-x0-Bl6"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -127,19 +131,25 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="NEY-HW-rPe"/>
                                                 </connections>
                                             </tableView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RI-aO-mpq">
-                                                <rect key="frame" x="189" y="1110" width="178" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RI-aO-mpq">
+                                                <rect key="frame" x="189" y="1052" width="178" height="70"/>
                                                 <color key="backgroundColor" red="0.98479729890823364" green="0.84080759813617634" blue="0.10118915401684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="178" id="mNK-Ot-Lhd"/>
+                                                    <constraint firstAttribute="height" constant="70" id="tSl-qE-3eV"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="استخدام فریلنسر">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-b8-zCZ">
-                                                <rect key="frame" x="8" y="1110" width="178" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-b8-zCZ">
+                                                <rect key="frame" x="8" y="1052" width="178" height="70"/>
                                                 <color key="backgroundColor" red="0.98479729890823364" green="0.84080759813617634" blue="0.10118915401684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="4mm-iQ-YQu"/>
+                                                    <constraint firstAttribute="width" constant="178" id="VBq-PH-m24"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="فریلنسر شوید">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -149,13 +159,19 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="0f0-dy-8KM" firstAttribute="leading" secondItem="z7z-uG-rOV" secondAttribute="leading" id="1DE-lN-l2x"/>
+                                            <constraint firstAttribute="bottom" secondItem="4RI-aO-mpq" secondAttribute="bottom" constant="65" id="379-CL-8ld"/>
+                                            <constraint firstItem="VQV-J7-VOr" firstAttribute="top" secondItem="BbQ-vZ-ia7" secondAttribute="bottom" constant="12" id="9fV-Km-JOr"/>
                                             <constraint firstAttribute="height" constant="1187" id="B2b-Qj-lQz"/>
-                                            <constraint firstItem="VQV-J7-VOr" firstAttribute="top" secondItem="BbQ-vZ-ia7" secondAttribute="bottom" constant="12" id="JbX-jE-UcL"/>
+                                            <constraint firstAttribute="bottom" secondItem="4mp-b8-zCZ" secondAttribute="bottom" constant="65" id="B9r-Se-Cwl"/>
+                                            <constraint firstItem="4mp-b8-zCZ" firstAttribute="leading" secondItem="z7z-uG-rOV" secondAttribute="leading" constant="8" id="CUA-Km-PbW"/>
+                                            <constraint firstAttribute="trailing" secondItem="VQV-J7-VOr" secondAttribute="trailing" id="EYV-vA-8rw"/>
                                             <constraint firstItem="BbQ-vZ-ia7" firstAttribute="top" secondItem="z7z-uG-rOV" secondAttribute="top" constant="-14" id="Zr2-FQ-kaa"/>
                                             <constraint firstItem="BbQ-vZ-ia7" firstAttribute="leading" secondItem="z7z-uG-rOV" secondAttribute="leading" id="jLy-UF-F9L"/>
+                                            <constraint firstItem="VQV-J7-VOr" firstAttribute="leading" secondItem="z7z-uG-rOV" secondAttribute="leading" id="oQg-q0-Rba"/>
+                                            <constraint firstAttribute="trailing" secondItem="4RI-aO-mpq" secondAttribute="trailing" constant="8" id="s0W-cR-sY4"/>
                                             <constraint firstAttribute="trailing" secondItem="0f0-dy-8KM" secondAttribute="trailing" id="vQr-Lu-XAL"/>
                                             <constraint firstAttribute="trailing" secondItem="BbQ-vZ-ia7" secondAttribute="trailing" id="w1J-ZQ-tpm"/>
-                                            <constraint firstItem="0f0-dy-8KM" firstAttribute="top" secondItem="VQV-J7-VOr" secondAttribute="bottom" constant="8" id="wEN-1Q-fJk"/>
+                                            <constraint firstItem="0f0-dy-8KM" firstAttribute="top" secondItem="VQV-J7-VOr" secondAttribute="bottom" constant="8" id="xw1-Dn-d9h"/>
                                         </constraints>
                                     </view>
                                 </subviews>
