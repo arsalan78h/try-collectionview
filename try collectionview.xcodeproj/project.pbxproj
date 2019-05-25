@@ -18,6 +18,7 @@
 		848A8B27223D255800BD217E /* BJAutoScrollingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A8B26223D255800BD217E /* BJAutoScrollingCollectionView.swift */; };
 		848A8B29223D256000BD217E /* CustomImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A8B28223D256000BD217E /* CustomImageCollectionViewCell.swift */; };
 		84C6F3C5228D5CDC00C2BD1B /* CustomCellSProjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6F3C4228D5CDC00C2BD1B /* CustomCellSProjects.swift */; };
+		84D6500222994AD0009FDFAF /* JoinAsFreelancerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D6500122994AD0009FDFAF /* JoinAsFreelancerViewController.swift */; };
 		C2FDB16499100555DD90ADCF /* Pods_try_collectionview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B3D9C4BED1A868A33FE983 /* Pods_try_collectionview.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		848A8B26223D255800BD217E /* BJAutoScrollingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJAutoScrollingCollectionView.swift; sourceTree = "<group>"; };
 		848A8B28223D256000BD217E /* CustomImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		84C6F3C4228D5CDC00C2BD1B /* CustomCellSProjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellSProjects.swift; sourceTree = "<group>"; };
+		84D6500122994AD0009FDFAF /* JoinAsFreelancerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinAsFreelancerViewController.swift; sourceTree = "<group>"; };
 		CC6BA5EC7F75C5A15573B42B /* Pods-try collectionview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-try collectionview.release.xcconfig"; path = "Pods/Target Support Files/Pods-try collectionview/Pods-try collectionview.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,8 @@
 		845E9A8F223CDFD900EE8BB6 /* try collectionview */ = {
 			isa = PBXGroup;
 			children = (
+				845E9A94223CDFD900EE8BB6 /* Main.storyboard */,
+				84D6500122994AD0009FDFAF /* JoinAsFreelancerViewController.swift */,
 				845E9A90223CDFD900EE8BB6 /* AppDelegate.swift */,
 				845E9A9C223CDFDA00EE8BB6 /* Info.plist */,
 				845E9A99223CDFDA00EE8BB6 /* LaunchScreen.storyboard */,
@@ -102,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				848A8B24223D254B00BD217E /* ViewController.swift */,
-				845E9A94223CDFD900EE8BB6 /* Main.storyboard */,
 				84875E9D225F35EC00BDA445 /* CategoriesTableView */,
 				84875E9C225F2D0F00BDA445 /* Slider ColeectionView */,
 			);
@@ -244,6 +247,7 @@
 				84875E9F225F361100BDA445 /* JSONstructCategoriesTableView.swift in Sources */,
 				848A8B29223D256000BD217E /* CustomImageCollectionViewCell.swift in Sources */,
 				84875EA1225F369400BDA445 /* TableCellController.swift in Sources */,
+				84D6500222994AD0009FDFAF /* JoinAsFreelancerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
